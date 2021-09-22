@@ -8,18 +8,19 @@ for tc in range(1, 1 + T):
     y = list(map(int, input().split()))
     E = float(input())
 
-    next_idx = -1
-    L = 0
+    next_idx = 0
+    cost = 0
     while len(x) > 1:
+        k = len(x)
         now_x = x.pop(next_idx)
-        noy_y = y.pop(next_idx)
-        min_L = 3000000
+        now_y = y.pop(next_idx)
+        min_L = 999999999999999999999
         for i in range(len(x)):
-            now_L = ((now_x - x[i]) ** 2 + (noy_y - y[i]) ** 2) ** 0.5
-            if now_L < min_L:
+            now_L = (now_x - x[i]) ** 2 + (now_y - y[i]) ** 2
+            if now_L <= min_L:
                 min_L = now_L
                 next_idx = i
-        L += min_L
+        cost += min_L * E
 
-    print(L)
+    print('#{}'.format(tc), round(cost))
 
