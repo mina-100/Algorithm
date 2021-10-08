@@ -1,5 +1,19 @@
 # SWEA Algorithm Study
 
+- ### 21.10.13 (예정)
+
+| number |         title          | difficulty |   etc    |
+| :----: | :--------------------: | :--------: | :------: |
+| 11736  |      평범한 숫자       |     D3     |          |
+|  1493  |    수의 새로운 연산    |     D3     |          |
+|  4299  | 태혁이의 사랑은 타이밍 |     D3     | not yet  |
+| 11856  |          반반          |     D3     | not yet  |
+|  2806  |        N-Queen         |     D3     | not yet  |
+|  5603  |        건조더미        |     D3     | not yet  |
+|  3074  |        입국심사        |     D4     | 이진탐색 |
+
+
+
 - ### 21.10.07
 
 |   number    |        title         | difficulty | etc  |
