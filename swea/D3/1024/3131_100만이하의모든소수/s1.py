@@ -1,19 +1,12 @@
 N = 1000000
-decimals = [0] * N
+decimals = [True] * (N + 1)
 
-decimals[0] = 2
+decimals[2] = 2
 
-idx = 1
-number = 3
-while number <= N:
-    flag = 0
-    for i in range(idx):
-        if not number // decimals[i]:
-            flag = 1
-            break
-    if not flag:
-        decimals[idx] = number
-        idx += 1
-    number += 1
-
-print(*decimals[:idx])
+for i in range(2, N + 1):
+    # True 이면 소수
+    if decimals[i]:
+        decimals[i] = i
+        print(i, end=' ')
+        for j in range(1, (N // i) + 1):
+            decimals[i * j] = False
